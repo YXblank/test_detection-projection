@@ -8,6 +8,7 @@
 
   <!-- Load parameters -->
   <rosparam command="load" ns="darknet_ros" file="$(find darknet_ros)/config/ros.yaml"/>
+<!-- Change the file name according to your network file -->
   <rosparam command="load" ns="darknet_ros" file="$(find darknet_ros)/config/yolov8-voc_final.yaml"/>
 
   <!-- Start darknet and ros wrapper -->
