@@ -1,0 +1,14 @@
+<?xml version="1.0"?>
+
+<launch>
+
+    <arg name="rviz" default="true" />  
+
+    <!-- YOLO DETECTOR -->
+    <include file="$(find auto)/launch/yolo_detector.launch"> 
+    </include>
+    
+    <!-- RVIZ -->
+    <node pkg="rviz" type="rviz" name="rviz_vo" args="-d $(find auto)/rviz_config.rviz" if="$(arg rviz)"/>
+
+</launch>
