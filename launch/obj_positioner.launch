@@ -1,0 +1,12 @@
+<?xml version="1.0"?>
+
+<launch>
+
+<node pkg="auto" type="object_positioner" name="object_positioner" output="screen">
+    <rosparam command="load" file="$(find auto)/param/object_positioner.yaml" />
+</node>
+
+<node pkg="auto" type="filter.py" name="filter" output="screen">
+</node>
+
+</launch>
