@@ -13,7 +13,7 @@ from sensor_msgs.msg import Image
 # TODO: parametrize these as inputs from launch file
 
 # Publish Frequency
-publish_frequency = 0.6
+publish_frequency = 0.4
 
 # TOPICS [in]
 image_in_topic = '/input'
